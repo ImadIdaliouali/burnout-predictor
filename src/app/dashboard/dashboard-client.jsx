@@ -98,7 +98,7 @@ function StressScoreCard({ score, insight, data }) {
 }
 
 function BurnoutRiskMeter({ risk }) {
-  const riskPercentage = risk !== null ? Math.round(risk * 100) : null;
+  const riskPercentage = risk !== null ? Math.round(risk) : null;
   const riskLevel =
     risk === null
       ? "Unknown"
