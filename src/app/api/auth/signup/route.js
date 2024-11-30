@@ -45,9 +45,9 @@ import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import { prisma } from "@/prisma";
 
-export async function POST(request) {
+export async function POST(req) {
   try {
-    const body = await request.json();
+    const body = await req.json();
 
     // Validate input
     if (
